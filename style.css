@@ -1,4 +1,7 @@
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: barzonite;
+  src: url(https://raw.githubusercontent.com/auxilarist/website/fonts/barzonite.ttf);
+}
+h1 {
+  font-family: barzonite;
 }
