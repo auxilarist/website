@@ -1,7 +1,7 @@
 @font-face {
     font-family: barzonite;
     src: url('https://raw.githubusercontent.com/auxilarist/website/fonts/barzonite.ttf');
-    format("opentype");
+    format("truetype");
 }
 
 body {
