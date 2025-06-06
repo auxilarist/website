@@ -1,6 +1,6 @@
 @font-face {
     font-family: barzonite;
-    src: url("fonts/barzonite.ttf") format("truetype");
+    src: url('https://raw.githubusercontent.com/auxilarist/website/main/fonts/barzonite.ttf') format("truetype");
 }
 
 body {
