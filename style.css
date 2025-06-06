@@ -2,8 +2,19 @@
     font-family: barzonite;
     src: url('https://raw.githubusercontent.com/auxilarist/website/main/fonts/barzonite.ttf') format("truetype");
 }
+@font-face {
+    font-family: jetbrains;
+    src: url('https://raw.githubusercontent.com/auxilarist/website/main/fonts/jetbrainspropo.ttf') format("truetype");
+}
 
-body {
+
+h1 {
   font-family: barzonite;
+  background-color: var(--color-bg);
+}
+
+
+p {
+  font-family: jetbrains;
   background-color: var(--color-bg);
 }
