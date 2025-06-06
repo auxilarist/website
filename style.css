@@ -1,10 +1,10 @@
 @font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    font-family: barzonite;
+    src: url('https://raw.githubusercontent.com/auxilarist/website/fonts/barzonite.ttf');
     format("opentype");
 }
 
 body {
-  font-family: HK Grotesk;
+  font-family: barzonite;
   background-color: var(--color-bg);
 }
