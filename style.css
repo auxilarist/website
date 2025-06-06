@@ -1,3 +1,14 @@
+:root {
+  --color-bg: #000000;
+  --color-text-main: #FFFFFF;
+  --color-text-header: #FFFFFF;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+}
+
+
 @font-face {
     font-family: barzonite;
     src: url('https://raw.githubusercontent.com/auxilarist/website/main/fonts/barzonite.ttf') format("truetype");
