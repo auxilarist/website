@@ -21,11 +21,13 @@
 
 h1 {
   font-family: barzonite;
+  color: #ffffff;
   background-color: var(--color-bg);
 }
 
 
 p {
   font-family: jetbrains;
+    color: #ffffff;
   background-color: var(--color-bg);
 }
