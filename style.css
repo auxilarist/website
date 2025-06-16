@@ -20,14 +20,11 @@
 
 
 /* Navigation Bar */
+/* Navigation Bar */
 .navbar {
-    background: #282c3a;
-    position: relative;
-    width: 100%;
-    height: 300px; /* Adjust height as needed */
-    background-image: url('your-image-url.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    background: #333;
 }
 
 .navbar a {
@@ -37,37 +34,30 @@
 }
 
 .navbar a:hover {
-    background: #575757; /* Change background color on hover */
-
-}
-
-@media (max-width: 600px) {
-    .navbar {
-        justify-content: flex-end; /* Align to the right on smaller screens */
-    }
-
-    .navbar a {
-        text-align: center;
-        padding: 10px;
-    }
+    background: #575757; /* Change background color on hover */ /* Scale the link slightly */
 }
 
 .banner-text {
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 25%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for exact center */
-    color: white;
-    text-align: center;
+    color: blue;
+    text-align: center
+    
 }
 
 .banner-text h1 {
     font-size: 2.5em; /* Adjust size as needed */
     margin: 0;
+        background-color: transparent; /* Transparent background */
+            transition: color 0.5s ease; /* Smooth color transition */
 }
 
 .banner-text p {
     font-size: 1.2em; /* Adjust size as needed */
+        background-color: transparent; /* Transparent background */
+            transition: color 0.5s ease; /* Smooth color transition */
 }
 
 .footer {
