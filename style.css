@@ -19,14 +19,78 @@
 }
 
 
+/* Navigation Bar */
+.navbar {
+    background: #282c3a;
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar a {
+    padding: 14px 20px;
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.navbar a:hover {
+    background: #575757; /* Change background color on hover */
+
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: flex-end; /* Align to the right on smaller screens */
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact center */
+    color: white;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 2.5em; /* Adjust size as needed */
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.2em; /* Adjust size as needed */
+}
+
+.footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 h1 {
+    text-align: center;
   font-family: barzonite;
   color: #ffffff;
   background-color: var(--color-bg);
+  
 }
 
 
 p {
+        text-align: center;
   font-family: jetbrains;
     color: #ffffff;
   background-color: var(--color-bg);
