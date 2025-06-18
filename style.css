@@ -22,12 +22,15 @@
 /* Navigation Bar */
 /* Navigation Bar */
 .navbar {
+    
     display: flex;
     justify-content: left;
-    background: #101428;
+    background: #0b0e1b;
+    font-family: jetbrains;
 }
 
 .navbar a {
+        text-decoration: none; /* Remove underline from links */
     padding: 14px 20px;
     color: white;
         border-radius: 12px; /* Rounded corners */
@@ -35,16 +38,18 @@
 }
 
 .navbar a:hover {
-    background: #181e3b; /* Change background color on hover */ /* Scale the link slightly */
+    background: #12172c; /* Change background color on hover */ /* Scale the link slightly */
 }
-
+.banner {
+      justify-content: center;
+            align-items: center;
+}
 .banner-text {
     position: absolute;
     top: 25%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for exact center */
-    color: blue;
-    text-align: left;
+  transform: translate(-45%, 0%); /* Adjust for exact center */
+    text-align: center; /* Change to center for horizontal alignment */
     
 }
 
@@ -52,22 +57,16 @@
     font-size: 4em; /* Adjust size as needed */
     margin: 0;
         background-color: transparent; /* Transparent background */
-            transition: color 0.5s ease; /* Smooth color transition */
-      text-shadow: 0 0 1px #fff, /* White glow */
-                         0 0 2px #fff, /* Brighter glow */
-                         0 0 5px #fff, /* Pink glow */
-                         0 0 7px #fff; /* More intense glow */
 }
-
 .banner-text p {
     font-size: 1em; /* Adjust size as needed */
+    margin: 0;
         background-color: transparent; /* Transparent background */
             transition: color 0.5s ease; /* Smooth color transition */
                   text-shadow: 0 0 1px #fff, /* White glow */
                          0 0 2px #fff, /* Brighter glow */
                          0 0 5px #fff, /* Pink glow */
                          0 0 7px #fff; /* More intense glow */
-
 }
 
 .footer {
@@ -80,18 +79,129 @@
     width: 100%;
 }
 
-h1 {
+.timeline {
+    position: relative;
+    max-width: 95%;
+    margin: 1em 5em;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    margin: 1em 5em;
+        transition: background 0.1s ease, transform 0.3s ease; /* Add transition for smooth effect */
+    background: #0b0e1b;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h2 {
+    margin: 1em 1em;
+}
+
+.timeline-item p {
+    margin: 1em 1em;
+}
+
+.timeline-item .date {
+    display: block;
+    font-size: 0.9em;
+    color: gray;
     text-align: center;
+    margin-top: 10px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -15px; /* Adjust position */
+    top: 0px;
+    height: 100%;
+    width: 2px;
+    background: white; /* Timeline line color */
+    z-index: -1;
+}
+
+.timeline-item:hover {
+    background: #12172c;
+        transform: scale(1.02); /* Slightly increase size on hover */
+}
+
+
+h1 {
   font-family: barzonite;
   color: #ffffff;
-  background-color: var(--color-bg);
+    max-width: 90%; /* Example width */
+    margin: 0 5em; /* Center the container */
+    word-wrap: break-word; /* Break long words if necessary */
+    line-height: 1.5; /* Adjust line height for better readability */
+    position: relative;
+    
+        /* Centering Styles */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text alignment */
+        margin-bottom: 1em; /* Adjust the space between paragraphs */
+          margin-top: 1em; /* Adjust the space between paragraphs */
+}
+
+h2 {
+  font-family: barzonite;
+  color: #ffffff;
+    max-width: 90%; /* Example width */
+    margin: 0 5em; /* Center the container */
+    word-wrap: break-word; /* Break long words if necessary */
+    line-height: 1.5; /* Adjust line height for better readability */
+        position: relative;
   
+      /* Centering Styles */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text alignment */
+            margin-bottom: 1em; /* Adjust the space between paragraphs */
 }
 
 
 p {
-        text-align: center;
   font-family: jetbrains;
     color: #ffffff;
-  background-color: var(--color-bg);
+    max-width: 90%; /* Example width */
+    margin: 0 5em; /* Center the container */
+    word-wrap: break-word; /* Break long words if necessary */
+    line-height: 1.5; /* Adjust line height for better readability */
+        position: relative;
+    
+        /* Centering Styles */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text alignment */
+            margin-bottom: 1em; /* Adjust the space between paragraphs */
+}
+
+
+footer {
+    background-color: #0b0e1b;
+    color: white;
+    padding: 20px;
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100px; /* Set a height for the footer */
+}
+
+footer a {
+    margin: 0 1em; /* Adjust margin for spacing between links */
+    color: #ffcc00; /* Example link color */
+    padding: 10px 20px; /* Add padding for buttons */
+    text-decoration: none; /* Remove underline */
+    font-family: jetbrains; /* Use font-family correctly */
+    transition: transform 0.3s ease, padding 0.3s ease; /* Smooth transition for both transform and padding */
+}
+
+footer a:hover {
+    transform: scale(1.2); /* Slightly grow the button */
+    padding: 0px 30px; /* Increase padding on hover for growth effect */
 }
