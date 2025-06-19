@@ -1,207 +1,283 @@
 :root {
   --color-bg: #000000;
-  --color-text-main: #FFFFFF;
-  --color-text-header: #FFFFFF;
-  --color-primary: #FFFF00;
+  --color-text-main: #ffffff;
+  --color-text-header: #ffffff;
+  --color-primary: #ffff00;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
+  
 }
-
 
 @font-face {
-    font-family: barzonite;
-    src: url('https://raw.githubusercontent.com/auxilarist/website/main/fonts/barzonite.ttf') format("truetype");
+  font-family: barzonite;
+  src: url("https://raw.githubusercontent.com/auxilarist/website/main/fonts/barzonite.ttf")
+    format("truetype");
 }
 @font-face {
-    font-family: jetbrains;
-    src: url('https://raw.githubusercontent.com/auxilarist/website/main/fonts/jetbrainspropo.ttf') format("truetype");
+  font-family: jetbrains;
+  src: url("https://raw.githubusercontent.com/auxilarist/website/main/fonts/jetbrainspropo.ttf")
+    format("truetype");
 }
-
 
 /* Navigation Bar */
 /* Navigation Bar */
 .navbar {
-    
-    display: flex;
-    justify-content: left;
-    background: #0b0e1b;
-    font-family: jetbrains;
+  display: flex;
+  justify-content: left;
+  background: #0b0e1b;
+  font-family: jetbrains;
 }
 
 .navbar a {
-        text-decoration: none; /* Remove underline from links */
-    padding: 14px 20px;
-    color: white;
-        border-radius: 12px; /* Rounded corners */
-    transition: background 0.1s ease, transform 0.3s ease; /* Add transition for smooth effect */
+  text-decoration: none; /* Remove underline from links */
+  padding: 14px 20px;
+  color: white;
+  border-radius: 12px; /* Rounded corners */
+  transition: background 0.1s ease, transform 0.3s ease; /* Add transition for smooth effect */
 }
 
 .navbar a:hover {
-    background: #12172c; /* Change background color on hover */ /* Scale the link slightly */
+  background: #12172c; /* Change background color on hover */ /* Scale the link slightly */
 }
+
+
+
+
+
 .banner {
-      justify-content: center;
-            align-items: center;
-}
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */}
 .banner-text {
-    position: absolute;
-    top: 25%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+  position: absolute;
+  top: 25%; /* Center vertically */
+  left: 50%; /* Center horizontally */
   transform: translate(-45%, 0%); /* Adjust for exact center */
-    text-align: center; /* Change to center for horizontal alignment */
-    
+  text-align: center; /* Change to center for horizontal alignment */
 }
 
 .banner-text h1 {
-    font-size: 4em; /* Adjust size as needed */
-    margin: 0;
-        background-color: transparent; /* Transparent background */
+  font-size: 4em; /* Adjust size as needed */
+  margin: 0;
+  background-color: transparent; /* Transparent background */
 }
 .banner-text p {
-    font-size: 1em; /* Adjust size as needed */
-    margin: 0;
-        background-color: transparent; /* Transparent background */
-            transition: color 0.5s ease; /* Smooth color transition */
-                  text-shadow: 0 0 1px #fff, /* White glow */
-                         0 0 2px #fff, /* Brighter glow */
-                         0 0 5px #fff, /* Pink glow */
-                         0 0 7px #fff; /* More intense glow */
+  font-size: 1em; /* Adjust size as needed */
+  margin: 0;
+  background-color: transparent; /* Transparent background */
+  transition: color 0.5s ease; /* Smooth color transition */
+  text-shadow: 0 0 1px #fff, /* White glow */ 0 0 2px #fff,
+    /* Brighter glow */ 0 0 5px #fff, /* Pink glow */ 0 0 7px #fff; /* More intense glow */
 }
 
+
+
+
+
 .footer {
-    background: #004080;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .timeline {
-    position: relative;
-    max-width: 95%;
-    margin: 1em 5em;
+  position: relative;
+  max-width: 95%;
+  margin: 5em 5em;
 }
 
 .timeline-item {
-    position: relative;
-    padding: 20px;
-    margin: 1em 5em;
-        transition: background 0.1s ease, transform 0.3s ease; /* Add transition for smooth effect */
-    background: #0b0e1b;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 20px;
+  margin: 1em 5em;
+  transition: background 0.1s ease, transform 0.3s ease; /* Add transition for smooth effect */
+  background: #0b0e1b;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-item h2 {
-    margin: 1em 1em;
+  text-align:center;
 }
 
 .timeline-item p {
-    margin: 1em 1em;
+    text-align:center;
 }
 
 .timeline-item .date {
-    display: block;
-    font-size: 0.9em;
-    color: gray;
-    text-align: center;
-    margin-top: 10px;
+  display: block;
+  font-size: 0.9em;
+  color: gray;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -15px; /* Adjust position */
-    top: 0px;
-    height: 100%;
-    width: 2px;
-    background: white; /* Timeline line color */
-    z-index: -1;
+  content: "";
+  position: absolute;
+  left: -15px; /* Adjust position */
+  top: 0px;
+  height: 100%;
+  width: 2px;
+  background: white; /* Timeline line color */
+  z-index: -1;
 }
 
 .timeline-item:hover {
-    background: #12172c;
-        transform: scale(1.02); /* Slightly increase size on hover */
+  background: #12172c;
+  transform: scale(1.02); /* Slightly increase size on hover */
 }
-
 
 h1 {
   font-family: barzonite;
   color: #ffffff;
-    max-width: 90%; /* Example width */
-    margin: 0 5em; /* Center the container */
-    word-wrap: break-word; /* Break long words if necessary */
-    line-height: 1.5; /* Adjust line height for better readability */
-    position: relative;
-    
-        /* Centering Styles */
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text alignment */
-        margin-bottom: 1em; /* Adjust the space between paragraphs */
-          margin-top: 1em; /* Adjust the space between paragraphs */
+  max-width: 90%; /* Example width */
+  margin: 0 5em; /* Center the container */
+  word-wrap: break-word; /* Break long words if necessary */
+  line-height: 1.5; /* Adjust line height for better readability */
+  position: relative;
+
+  /* Centering Styles */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text alignment */
+  margin-bottom: 1em; /* Adjust the space between paragraphs */
+  margin-top: 1em; /* Adjust the space between paragraphs */
 }
 
 h2 {
   font-family: barzonite;
   color: #ffffff;
-    max-width: 90%; /* Example width */
-    margin: 0 5em; /* Center the container */
-    word-wrap: break-word; /* Break long words if necessary */
-    line-height: 1.5; /* Adjust line height for better readability */
-        position: relative;
-  
-      /* Centering Styles */
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text alignment */
-            margin-bottom: 1em; /* Adjust the space between paragraphs */
-}
+  max-width: 90%; /* Example width */
+  margin: 0 5em; /* Center the container */
+  word-wrap: break-word; /* Break long words if necessary */
+  line-height: 1.5; /* Adjust line height for better readability */
+  position: relative;
 
+  /* Centering Styles */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text alignment */
+  margin-bottom: 1em; /* Adjust the space between paragraphs */
+}
 
 p {
   font-family: jetbrains;
-    color: #ffffff;
-    max-width: 90%; /* Example width */
-    margin: 0 5em; /* Center the container */
-    word-wrap: break-word; /* Break long words if necessary */
-    line-height: 1.5; /* Adjust line height for better readability */
-        position: relative;
-    
-        /* Centering Styles */
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text alignment */
-            margin-bottom: 1em; /* Adjust the space between paragraphs */
+  color: #ffffff;
+  max-width: 90%; /* Example width */
+  margin: 0 5em; /* Center the container */
+  word-wrap: break-word; /* Break long words if necessary */
+  line-height: 1.5; /* Adjust line height for better readability */
+  position: relative;
+
+  /* Centering Styles */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text alignment */
+  margin-bottom: 1em; /* Adjust the space between paragraphs */
 }
+
 
 
 footer {
-    background-color: #0b0e1b;
-    color: white;
-    padding: 20px;
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    height: 100px; /* Set a height for the footer */
+  background-color: #0b0e1b;
+  color: white;
+  padding: 20px;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 100px; /* Set a height for the footer */
 }
 
 footer a {
-    margin: 0 1em; /* Adjust margin for spacing between links */
-    color: #ffcc00; /* Example link color */
-    padding: 10px 20px; /* Add padding for buttons */
-    text-decoration: none; /* Remove underline */
-    font-family: jetbrains; /* Use font-family correctly */
-    transition: transform 0.3s ease, padding 0.3s ease; /* Smooth transition for both transform and padding */
+  margin: 0 1em; /* Adjust margin for spacing between links */
+  color: #ffcc00; /* Example link color */
+  padding: 10px 20px; /* Add padding for buttons */
+  text-decoration: none; /* Remove underline */
+  max-width: 30%;
+  font-family: jetbrains; /* Use font-family correctly */
+  transition: transform 0.3s ease, padding 0.3s ease; /* Smooth transition for both transform and padding */
 }
 
 footer a:hover {
-    transform: scale(1.2); /* Slightly grow the button */
-    padding: 0px 30px; /* Increase padding on hover for growth effect */
+  transform: scale(1.2); /* Slightly grow the button */
+  padding: 0px 30px; /* Increase padding on hover for growth effect */
 }
+
+.fact-file {
+    position: relative;
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Center items vertically */
+  background-color: #0b0e1b; /* White background for fact file */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+    padding: 20px; /* Padding inside the fact file */
+    margin: 20px; /* Margin between fact files */
+    max-width: 96%; /* Set a max width for the fact file */
+    width: 100%; /* Allow it to take full width up to max-width */
+    transition: background 0.1s ease, transform 0.3s ease; /* Add transition for smooth effect */
+  
+}
+.fact-file:hover {
+  background: #12172c;
+  transform: scale(1.02); /* Slightly grow the button */
+}
+
+.fact-content {
+  flex: 1; /* Allow content to take up available space */
+    width: 100%;
+  max-width:19em;
+}
+
+.fact-title {
+  font-size: 24px; /* Title size */
+  margin-bottom: 10px; /* Space below the title */
+  width: 100%;
+  max-width:19em;
+  
+}
+
+
+.fact-image {
+  max-width: 19em; /* Set a fixed width for the image */
+  height: 10em; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+  margin-left: 5em; /* Space between the text and the image */
+  margin-right: 5em; /* Space between the text and the image */
+  margin: 1em, 1em; /* Margin between fact files */
+}
+
+.fact-list {
+  list-style-type: disc; /* Bulleted list */
+  padding-left: 1em; /* Indentation for the list */
+  color: white;
+  width: 100%;
+  max-width:19em;
+  margin: 0.1em, 1em; /* Margin between fact files */
+}
+
+.fact-list p {
+    color: white;
+  width: 100%;
+  max-width:19em;
+  
+}
+
+.fact-list li {
+  margin-bottom: 5px; /* Space between list i*/
+  font-family: jetbrains;
+  width: 100%;
+  max-width:19em;
+  margin: 0.1em,1em; /* Margin between fact files */
+}
+
